@@ -2,9 +2,10 @@
 
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *))
+@custom-variant dark (&:where(.dark *));
 
 /*Apply font for entire webpaege*/
+
 * {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
