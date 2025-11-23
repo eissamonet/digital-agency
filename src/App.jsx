@@ -4,7 +4,7 @@ import ThemeToggleBtn from './components/ThemeToggleBtn'
 
 const App = () => {
 
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
 
   return (
     <div className='dark:bg-black relative'>
