@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import ThemeToggleBtn from './components/ThemeToggleBtn'
+import Hero from './components/Hero';
 
 const App = () => {
 
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <div className='dark:bg-black relative'>
       <Navbar theme={theme} setTheme={setTheme} />
+      <Hero />
     </div>
   )
 }
