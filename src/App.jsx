@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
+import ThemeToggleBtn from './components/ThemeToggleBtn'
 
 const App = () => {
 
