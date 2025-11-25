@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 /*Apply font for entire webpaege*/
 
