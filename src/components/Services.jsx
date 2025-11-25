@@ -31,6 +31,12 @@ const Services = () => {
         <img src={assets.bgImage2} alt='' className='absolute -top-110 -left-70 -z-1 dark:hidden' />
     <Title title='How can we help?' desc='From strategy to execution, we craft digital solutions that move your business forward.' />
 
+    <div className='flex flex-col md:grid grid-col-s'>
+       {ServicesData.map((service, index) => (
+        <ServiceCard key={index} service={service} index={index} />
+       ))}
+    </div>
+
     </div>
   )
 }
