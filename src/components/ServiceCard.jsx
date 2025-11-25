@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const ServiceCard = ({ service, index }) => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+  const [visible, setVisible] = useState(false);
 
   return (
     <div
@@ -9,8 +10,8 @@ const ServiceCard = ({ service, index }) => {
     dark:shadow-white/10"
     >
       <div
-        className="pointer-events-none blur-2xl rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
-          w-[300px] h-[300px] absolute z-0 transition-opacity duration-500 mix-blend-lighten opacity-70"
+        className={`pointer-events-none blur-2xl rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
+          w-[300px] h-[300px] absolute z-0 transition-opacity duration-500 mix-blend-lighten ${visible ? 'opacity-70' : 'opacity-0'}`}
         style={{ top: position.y - 150, left: position.x - 150 }}
       />
 
