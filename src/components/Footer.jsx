@@ -11,12 +11,16 @@ const Footer = ({theme}) => {
            <img src={theme === 'dark' ? assets.logo_dark : assets.logo} className='w-32 sm:w-44' alt="" />
            <p className='max-w-md'>From strategy to execution, we craft digital solutions that move your business forward.</p>
 
-           <ul>
+           <ul className='flex gap-8'>
             <li><a className='hover:text-primary' href='#hero'>Home</a></li>
             <li><a className='hover:text-primary' href='#services'>Services</a></li>
             <li><a className='hover:text-primary' href='#our-work'>Our Work</a></li>
             <li><a className='hover:text-primary' href='#contact-us'>Contact Us</a></li>
            </ul>
+        </div>
+        <div className='text-gray-600 dark:text-gray-400'>
+            <h3 className='font-semibold'>Subscribe To Our Newsletter</h3>
+            <p className='text-sm mt-2 mb-6'>The latest news, articles, and resources, sent to your inbox weekly</p>
         </div>
       </div>
     </div>
