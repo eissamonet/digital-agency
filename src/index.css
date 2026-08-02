@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/*Apply font for entire webpaege*/
+/*Apply font for entire webppage*/
 
 * {
   font-family: "Manrope", sans-serif;
